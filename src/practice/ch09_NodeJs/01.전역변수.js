@@ -8,3 +8,4 @@ for (let i = 0; i < 10; i++)
     process.exit();
   else
     console.log(i);
+
