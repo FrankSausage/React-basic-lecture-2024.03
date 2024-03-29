@@ -53,8 +53,10 @@ export default function Calculator() {
         setOpr('-');
         break;
       case '*':
+        if(val === 0 && val2 === 0){
+          return;
+        }
         if (result !== 0) {
-          console.log('진입');
           opResult = val * result;
           setVal(0); setVal2(opResult); setResult(opResult); setViewer(opResult);
         } else if (val2 === 0) {
@@ -68,8 +70,10 @@ export default function Calculator() {
         setOpr('*');
         break;
       case '/':
+        if((val === 0 && val2 === 0)){
+          return;
+        }
         if (result !== 0) {
-          console.log('진입');
           opResult = val / result;
           setVal(0); setVal2(opResult); setResult(opResult); setViewer(opResult);
         } else if (val2 === 0) {
