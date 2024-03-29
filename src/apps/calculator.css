@@ -1,0 +1,29 @@
+.card {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ebebeb;
+  border-radius: 20px;
+}
+
+input, button {
+  padding: 5px; margin: 5px;
+}
+
+table {
+  margin: 5px;
+}
+
+td {
+  padding: 28px;
+  background-color: white;
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  width: 90%;
+  text-align: end;
+  font-size: larger;
+
+}

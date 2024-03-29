@@ -12,10 +12,11 @@ export default function User2(props) {
     e.preventDefault();
     let getUser = users.find(item => item.id == form.id);
     if(getUser){
-      const getList = users.filter(item => item.id != form.id);
-      getList.push(form);
-      getList.sort((a, b) => a.id.localeCompare(b.id));
-      setUsers(getList);
+//       const getList = users.filter(item => item.id != form.id);
+//       getList.push(form);
+//       getList.sort((a, b) => a.id.localeCompare(b.id));
+//       setUsers(getList);
+        setUsers(users.map(user => (user.id == form.id) ? form : user));
     } else {
       setUsers([...users, form]);
     }
